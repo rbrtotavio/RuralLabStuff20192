@@ -17,14 +17,14 @@ def welsh_powell(grafo):                                                        
 
 
 if __name__ == "__main__":
-    grafo = {'a':{'b', 'e'},
-             'b':{'a', 'e', 'f', 'g', 'c'},
-             'c':{'b', 'g', 'h', 'd'},
-             'd':{'c', 'h'},
-             'e':{'a', 'b', 'f', 'h'},
-             'f':{'e', 'b', 'g', 'h'},
+    grafo = {'h':{'e', 'f', 'g', 'c', 'd'},
              'g':{'f', 'b', 'c', 'h'},
-             'h':{'e', 'f', 'g', 'c', 'd'}}
+             'f':{'e', 'b', 'g', 'h'},
+             'e':{'a', 'b', 'f', 'h'},
+             'd':{'c', 'h'},
+             'c':{'b', 'g', 'h', 'd'},
+             'b':{'a', 'e', 'f', 'g', 'c'},
+             'a':{'b', 'e'}}
 
 print(welsh_powell(grafo))
 
