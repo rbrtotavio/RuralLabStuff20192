@@ -10,7 +10,7 @@ def umlaco(string):
     z = len(string)
     i = 0
     j = 0
-    while i < z + 1:
+    while i <= z:
         if j == z:
             i += 1
             j = i
